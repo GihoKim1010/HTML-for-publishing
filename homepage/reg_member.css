@@ -1,0 +1,31 @@
+#newMember {
+    width: 200px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+#newMember table {
+    width: 100%;
+    table-layout: fixed;
+}
+
+#newMember td:first-child {
+    width: 100px;
+}
+
+#newMember td:nth-child(2),
+#newMember td:nth-child(3),
+#newMember td:nth-child(4) {
+    width: 200px;
+}
+
+#newMember input#newYear,
+#newMember input#newMonth,
+#newMember input#newDay,
+#newMember input#tel1,
+#newMember input#tel2,
+#newMember input#tel3 {
+
+width: 50px;
+}
