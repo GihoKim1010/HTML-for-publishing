@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>reg_member</title>
+    <link rel="stylesheet" href="reg_member.css">
+    <script src="reg_member.js"></script>
+</head>
+
+<body>
+    <form id="newMember">
+        <table>
+            <tr>
+                <td>ID</td>
+                <td colspan="3"><input type="text" id="newID" minlength="6" maxlength="12"
+                        placeholder="6자리 이상, 12자리 이하"></td>
+            </tr>
+            <tr>
+                <td>PW</td>
+                <td colspan="3"><input type="password" id="newPW" minlength="4" maxlength="12"
+                        placeholder="4자리 이상, 12자리 이하"></td>
+            </tr>
+            <tr>
+                <td>PW확인</td>
+                <td colspan="3"><input type="password" id="newPW2" minlength="4" maxlength="12" placeholder="비밀번호 재입력"></td>
+            </tr>
+            <tr>
+                <td>이름</td>
+                <td colspan="3"><input type="text" id="newName" minlength="2" maxlength="4" placeholder="성함을 입력하세요."> </tr>
+            <tr>
+                <td>이메일</td>
+                <td colspan="3"><input type="email" id="newEmail" placeholder="이메일을 입력하세요."></td>
+            </tr>
+            <tr>
+                <td>생년월일</td>
+                <td><input type="number" id="newYear" placeholder="년" minlength="4" maxlength="4" value="2000"></td>
+                <td><input type="number" id="newMonth" placeholder="월" minlength="1" maxlength="2" value="1"></td>
+                <td><input type="number" id="newDay" placeholder="일" minlength="1" maxlength="2" value="1"></td>
+            </tr>
+            <tr>
+                <td>성별</td>
+                <td>남<input type="radio" name="gender"></td>
+                <td>여<input type="radio" name="gender"></td>
+            </tr>
+            <tr>
+                <td>휴대폰번호</td>
+                <td><input type="tel" id="tel1" minlength="3" maxlength="3" value="010"></td>
+                <td><input type="tel" id="tel2" minlength="4" maxlength="4"></td>
+                <td><input type="tel" id="tel3" minlength="4" maxlength="4"></td>
+            </tr>
+            <tr colspan="4">
+                <td><input type="button" id="resist" onclick="submitID()" value="회원가입"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>
